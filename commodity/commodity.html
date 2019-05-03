@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>悻。倖</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="commodity.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- include jQuery library from Google CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"> </head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+    <div class="preload"><img src="loading_spinner.gif" /></div>
+    <div class="preloader"></div>
+    <header>
+        <nav>
+            <div class="menu-icon">
+                <div id="hi"> <a href="../index.html"><h1><img src="logowhite.png" /></h1></a> </div> <i class="fa fa-bars fa-2x"></i></div>
+            <div class="menu">
+                <ul>
+                    <div class="logo"><img src="logowhite.png" /></div>
+                    <li><a href="../emotion/emotion.html">情緒介紹</a></li>
+                    <li><a href="../role/role.html">登場角色</a></li>
+                    <li><a href="../ebook/e-book.html">繪本欣賞</a></li>
+                    <li><a href="commodity.html">周邊商品</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section id="s1" class="container-fluid">
+        <h1>一周邊商品介紹一</h1>
+        <div class="row">
+            <div class="col-xs-0 col-sm-1 col-md-1 col-lg-2"></div>
+            <div class="col-xs-12 col-sm-10 col-md-10 col-lg-8">
+                <p>圍繞著主題做了一系列的周邊作品，皆在現場展出以及販售，快來瞧瞧吧！</p>
+            </div>
+            <div class="col-xs-0 col-sm-1 col-md-1 col-lg-2"></div>
+        </div>
+        <div class="row">
+            <div id="00" class="col-xs-0 col-sm-1 col-md-1 col-lg-2"></div>
+            <div id="01" class="col-xs-12 col-sm-5 col-md-5 col-lg-4">
+                <h1>01-萬年手帳</h1>
+                <p>看完醒醒的故事之後，想必大家都好奇後續到底發生什麼事情？萬年手帳中含6篇獨家番外，一次滿足大家的好奇心！</p>
+                <a href="calendar/calendar.html"><img src="01.jpg"/></a>
+            </div>
+            <div id="02" class="col-xs-12 col-sm-5 col-md-5 col-lg-4">
+                <h1>02-貼紙</h1>
+                <p>迷你角色、場景、元素小物、角色表情包，主視覺相關都一應具全！</p>
+                <a href="sticker/sticker.html"><img src="02.jpg"/></a>
+            </div><!--換不同照片也有問題代表是城市問題，結果換複製第三個的程式碼就好了!?-->
+            <div id="00" class="col-xs-0 col-sm-1 col-md-1 col-lg-2"></div>
+        </div>
+        <div class="row">
+            <div id="00" class="col-xs-0 col-sm-1 col-md-1 col-lg-2"></div>
+            <div id="03" class="col-xs-12 col-sm-5 col-md-5 col-lg-4">
+                <h1>03-筆記本</h1>
+                <p>以醒醒的情緒色票為底色，並根據繪本中不同的場景進行封面的設計。封面亦搭配了和情緒有關的勵志小語，希望可以給大家帶來一些能量。</p>
+                <a href="notebook/notebook.html"><img src="03.jpg"/></a>
+            </div>
+            <div id="04" class="col-xs-12 col-sm-5 col-md-5 col-lg-4">
+                <h1>04-網點疊印</h1>
+                <p>特別的小卡疊色遊戲！以混色的原理進行透明片疊印的設計，主要可進行混色的為角色透明片。</p>
+                <a href="color/color.html"><img src="04.jpg"/></a>
+            </div>
+        </div>
+        <div class="row">
+            <div id="00" class="col-xs-0 col-sm-3 col-md-3 col-lg-4"></div>
+            <div id="05" class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                <h1>05-明信片</h1>
+                <p>精選繪本中的五個人氣場景，搭配不同的情緒LOGO而製成的精美明信片。</p>
+                <a href="postcard/postcard.html"><img src="05.jpg"/></a>
+            </div>
+        </div>
+        <div class="foot"></div>
+    </section>
+    <script type="text/javascript">
+        //preload gif
+        $(function () {});
+        //preloader
+        $(window).on('load', function () {
+            $('.preloader').addClass('complete');
+            $(".preload").fadeOut(500);
+        });
+        // Menu-toggle button
+        $(document).ready(function () {
+            $(".menu-icon").on("click", function () {
+                $("nav ul").toggleClass("showing");
+            });
+        });
+        // Scrolling Effect
+        $(window).on("scroll", function () {
+            if ($(window).scrollTop()) {
+                $('nav').addClass('black');
+            }
+            else {
+                $('nav').removeClass('black');
+            }
+        });
+    </script>
+</body>
+</html>

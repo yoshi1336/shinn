@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>悻。倖</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="color.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- include jQuery library from Google CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"> </head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+    <div class="preload"><img src="loading_spinner.gif" /></div>
+    <div class="preloader"></div>
+    <header>
+        <nav>
+            <div class="menu-icon">
+                <div id="hi"> <a href="../../index.html"><h1><img src="logowhite.png" /></h1></a> </div> <i class="fa fa-bars fa-2x"></i></div>
+            <div class="menu">
+                <ul>
+                    <div class="logo"><img src="logowhite.png" /></div>
+                    <li><a href="../../emotion/emotion.html">情緒介紹</a></li>
+                    <li><a href="../../role/role.html">登場角色</a></li>
+                    <li><a href="../../ebook/e-book.html">繪本欣賞</a></li>
+                    <li><a href="../../commodity/commodity.html">周邊商品</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section id="s1" class="container-fluid">
+        <h1>網點疊印</h1>
+        <div class="row">
+            <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1"></div>
+            <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5 main">
+                <p>特別的小卡疊色遊戲！以混色的原理進行透明片疊印的設計，主要可進行混色的為角色透明片。</p> <img src="01.jpg" /> </div>
+            <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5 picture"> <img src="02.jpg" />
+                <p>場景-可根據個人喜好做場景替換</p>
+            </div>
+            <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5 picture"> <img src="03.jpg" />
+                <p>角色-可進行混色的透明片</p>
+            </div>
+            <div class="col-xs-12 col-sm-5 col-md-5 col-lg-4">
+                <div class="row">
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                        <p class="p1">角色配件-圍巾</p>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6"> <img src="04.jpg" /> </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="s2" class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 col-sm-1 col-md-1 col-lg-1"></div>
+            <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
+                <h1>關於情緒的解決方式</h1>
+                <div class="row">
+                    <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4">
+                        <h2>共四張</h2></div>
+                    <div class="col-xs-6 col-sm-8 col-md-8 col-lg-8">
+                        <h6>使用紙材-砂糖紙</h6></div>
+                </div>
+                <img src="05.jpg" />
+                <p>正面-小語</p>
+                <img src="06.jpg" />
+                <p>背面-不同情緒的解決方式</p>
+            </div>
+            <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
+                <h1>使用方法</h1>
+                <p>將希望混色的透明片交疊，即可產生混色結果。</p>
+                <img src="07.jpg" />
+                <p>加上場景與配件，一件作品就完成了！</p>
+            </div>
+        </div>
+        <div class="foot"></div>
+    </section>
+    <script type="text/javascript">
+        //preload gif
+        $(function () {});
+        //preloader
+        $(window).on('load', function () {
+            $('.preloader').addClass('complete');
+            $(".preload").fadeOut(500);
+        });
+        // Menu-toggle button
+        $(document).ready(function () {
+            $(".menu-icon").on("click", function () {
+                $("nav ul").toggleClass("showing");
+            });
+        });
+        // Scrolling Effect
+        $(window).on("scroll", function () {
+            if ($(window).scrollTop()) {
+                $('nav').addClass('black');
+            }
+            else {
+                $('nav').removeClass('black');
+            }
+        });
+    </script>
+</body>
+
+</html>
